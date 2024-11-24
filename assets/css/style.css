@@ -726,12 +726,29 @@ textarea.input-field {
 .copyright-link {
   color: #fff;
   font-weight: var(--fw-500);
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  margin-block: 5px 0;
+  width: 100%;
+}
+.footer-content h3 {
+  display: flex;
+  justify-content: center;
+}
+.footer-content p {
+ display: flex;
+ justify-content: center;
+}
 .footer-link {
   color: #fff;
-  display: inline;
+  display: flex;
   justify-content: center;
   gap: 15px;
   margin-block: 15px 0;
@@ -739,45 +756,46 @@ textarea.input-field {
 .footer-link-section {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-block: 5px 0;
+  align-content: center;
+  gap: 10px;
+  margin-block: 15px 0;
   flex: 1;
   flex-direction: column;
+  width: 100%;
 }
 .footer-link-section p {
   font-size: 1.25rem;
   font-weight: 500;
   color: #ffff;
 }
+
 .social-media{
- display: flex;
- flex-direction: row;
- gap: 15px;
- margin-block: 0;
- justify-content: start;
-}
-.footer-content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   gap: 15px;
-  margin-block: 15px 0;
-  margin-bottom: 15px;
-}
-.logo-footer {
+  margin-block: 0;
+  justify-content: center;
+ }
+ .logo-footer {
   font-family: var(--ff-league-spartan);
   color: var(--white-1);
   font-size: 3.5rem;
   font-weight: var(--fw-700);
   line-height: 1;
+  display: flex;
+  justify-content: center;
 }
 .footer-logo{
   display: flex;
   flex: 1;
-  justify-content: left;
+  justify-content: center;
   gap: 15px;
-  margin-block: 75px 0;
+  margin-block: 15px 0;
 }
+.footer-logo p {
+  text-align: center;
 
+}
 /*-----------------------------------*\
   #BACK TO TOP
 \*-----------------------------------*/
@@ -834,7 +852,12 @@ textarea.input-field {
     column-gap: 25px;
   }
 
-
+  /**
+   * FOOTER
+   */
+  .footer-content {
+    max-width: 540px;
+  }
 
   /**
    * BLOG
@@ -940,6 +963,13 @@ textarea.input-field {
 
   .contact-item { min-width: calc(50% - 12.5px); }
 
+  /**
+   * FOOTER
+   */
+  .footer-content {
+    max-width: 720px;
+  }
+
 }
 
 
@@ -1024,7 +1054,74 @@ textarea.input-field {
   .header .btn { margin-block-start: 0; }
 
 
+  /**
+   * FOOTER
+   */
+  .footer-link {
+    color: #fff;
+    display: inline;
+    justify-content: center;
+    gap: 15px;
+    margin-block: 15px 0;
+  }
+  .footer-link-section {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-block: 5px 0;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    margin-block: 15px 0;
+    margin-bottom: 15px;
+    padding-top: 10px;
+  }
+  .footer-content h3 {
+    display: flex;
+    justify-content: left;
+  }
+  .footer-content p {
+    display: flex;
+    justify-content: left;
+   }
+  .footer-logo{
+    display: flex;
+    flex: 1;
+    justify-content: left;
+    gap: 15px;
+    margin-block: 75px 0;
+    padding-right: 10px;
+  }
+  .footer-logo p {
+    text-align: left;
 
+  }
+  .logo-footer {
+    display: flex;
+    justify-content: left;
+  }
+  .social-media{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-block: 0;
+    justify-content: start;
+   }
+
+   .copyright-link {
+    display: inline;
+    justify-content: left;
+  }
+  
+  .copyright {
+    text-align: left;
+  }
   /**
    * HERO
    */
@@ -1096,6 +1193,12 @@ textarea.input-field {
 
   .contact-card .card-icon { font-size: 32px; }
 
+  /**
+   * FOOTER
+   */
+   .footer-content {
+    max-width: 960px;
+  }
 }
 
 
@@ -1177,5 +1280,12 @@ textarea.input-field {
   .contact-card { gap: 20px; }
 
   .contact-card .card-icon { padding: 15px; }
+
+  /**
+   * FOOTER
+   */
+   .footer-content {
+    max-width: 1140px;
+  }
 
 }
