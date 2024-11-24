@@ -796,6 +796,12 @@ textarea.input-field {
   text-align: center;
 
 }
+.copyright-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 /*-----------------------------------*\
   #BACK TO TOP
 \*-----------------------------------*/
@@ -1119,7 +1125,17 @@ textarea.input-field {
     justify-content: left;
   }
   
-  .copyright {
+  .copyright-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    flex-direction: row;
+    padding-top: 10px;
+    width: 100%;
+  }
+  .copyright-freepik{
+    display: flex;
+    justify-content: left;
     text-align: left;
   }
   /**
