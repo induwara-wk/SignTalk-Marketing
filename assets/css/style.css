@@ -1,14 +1,10 @@
 
 
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
+/* PROPERTIES */
 
 :root {
 
-  /**
-   * colors
-   */
+  /* colors */
 
   --safety-orange: hsl(25, 100%, 50%);
   --lavender-gray: hsl(230, 19%, 81%);
@@ -26,15 +22,11 @@
   --white-2: hsl(0, 14%, 98%);
   --black: hsl(0, 0%, 0%);
 
-  /**
-   * gradient color
-   */
+  /* gradient color */
 
   --gradient: linear-gradient(to left top, var(--persian-rose), var(--safety-orange));
 
-  /**
-   * typography
-   */
+  /* typography */
 
   --ff-roboto: 'Roboto', sans-serif;
   --ff-league-spartan: 'League Spartan', sans-serif;
@@ -45,34 +37,27 @@
   --fs-4: 1.7rem;
   --fs-5: 1.4rem;
   --fs-6: 1.3rem;
+  --fs-7: 1.5rem;
 
   --fw-700: 700;
   --fw-500: 500;
 
-  /**
-   * spacing
-   */
+  /* spacing*/
 
   --section-padding: 60px;
 
-  /**
-   * shadow
-   */
+  /* shadow */
 
   --shadow-1: 0 6px 24px var(--black_5);
   --shadow-2: 0 2px 28px var(--black_10);
 
-  /**
-   * border radius
-   */
+  /* border radius */
 
   --radius-2: 2px;
   --radius-5: 5px;
   --radius-8: 8px;
 
-  /**
-   * transition
-   */
+  /* transition */
 
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease;
@@ -81,12 +66,6 @@
 }
 
 
-
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
 
 *,
 *::before,
@@ -157,11 +136,8 @@ body {
 
 
 
+/* REUSED STYLE */
 
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
 
 .container { padding-inline: 1px; }
 
@@ -233,11 +209,8 @@ body {
 
 
 
+/* HEADER */
 
-
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
 
 .header {
   position: fixed;
@@ -323,9 +296,9 @@ body {
 
 
 
-/*-----------------------------------*\
-  #HEO
-\*-----------------------------------*/
+
+/* HERO */
+
 
 .hero {
   padding-block-start: calc(var(--section-padding) + 50px);
@@ -351,11 +324,8 @@ body {
 
 
 
+/* SERVICE */
 
-
-/*-----------------------------------*\
-  #SERVICE
-\*-----------------------------------*/
 
 .service { background-color: var(--white-2); }
 
@@ -386,11 +356,39 @@ body {
 
 .service-card .card-text { font-size: var(--fs-6); text-align: center;}
 
-
-
 /*-----------------------------------*\
-  #ABOUT
+  #TEAM
 \*-----------------------------------*/
+
+.section-text{
+  margin-bottom: 30px;
+}
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white-1);
+  padding: 20px 15px;
+  border: 1px solid var(--platinum);
+  border-radius: var(--radius-5);
+  text-align: center;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition-2);
+  margin-top: 20px;
+}
+.member-card img{
+  max-width: 150px;
+  align-items: center;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+
+/* ABOUT */
+
 
 .about { background-color: var(--white-2); }
 
@@ -447,11 +445,8 @@ body {
 
 
 
+/* CTA */
 
-
-/*-----------------------------------*\
-  #CTA
-\*-----------------------------------*/
 
 .cta {
   position: relative;
@@ -489,42 +484,7 @@ body {
 
 
 
-
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
-
-.blog .section-text { margin-block: 5px 35px; }
-
-.blog-card { background-color: var(--white-2); }
-
-.blog-card .card-banner { overflow: hidden; }
-
-.blog-card .card-banner img { transition: var(--transition-2); }
-
-.blog-card:is(:hover, :focus-within) .card-banner img { transform: scale(1.05); }
-
-.blog-card .card-content { padding: 15px; }
-
-.blog-card .time {
-  color: var(--red-crayola);
-  font-size: var(--fs-6);
-  line-height: 1;
-  margin-block-end: 10px;
-}
-
-.blog-card .card-title { transition: var(--transition-1); }
-
-.blog-card .card-title:is(:hover, :focus) { color: var(--red-crayola); }
-
-
-
-
-
-/*-----------------------------------*\
-  #CONTACT
-\*-----------------------------------*/
+/* CONTACT */
 
 .contact { background-color: var(--white-2); }
 
@@ -630,88 +590,77 @@ textarea.input-field {
 .contact-card .card-link:is(:hover, :focus) { color: var(--red-crayola); }
 
 
-/*-----------------------------------*\
-  #FAQ
-\*-----------------------------------*/
 
-.faq .container {
-  display: grid;
-  gap: 20px;
+/* FAQ */
+
+.wrapper {
+  max-width: 75%;
+  margin: 60px auto;
 }
 
-.faq .title-wrapper {
-  background-color: var(--white);
-  padding: 30px 25px;
-  box-shadow: var(--shadow-1);
+.wrapper > p,
+.wrapper > h1 {
+  margin: 1.5rem 0;
+  text-align:center;
 }
 
-.faq .section-title {
-  font-size: var(--fs-4);
-  margin-block-end: 30px;
+.wrapper > h1 {
+  font-size: var(--fs-2);
+  color: var(--eerie-black);
+  font-family: var(--ff-league-spartan);
+  margin-bottom: 30px;
 }
 
-.faq-card {
-  background-color: var(--go-green_5);
-  border-radius: var(--radius-5);
-  overflow: hidden;
-}
-
-.faq-card .card-action {
-  --action-bg: var(--go-green_8);
-  --color: var(--granite-gray);
-
-  background-color: var(--action-bg);
-  text-align: left;
+.accordion {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  font-size: 1.7rem;;
   width: 100%;
+  padding: 2rem 2.5rem;
+  border: none;
+  outline: none;
+  transition: 0.4s;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 25px;
-  gap: 20px;
-  transition: var(--transition-1);
+  font-weight: bold;
+ 
 }
 
-.faq-card .card-action:is(:hover, :focus, .active) {
-  --action-bg: var(--go-green);
-  --color: var(--white);
+.accordion i {
+  font-size: rem;
 }
 
-.faq-card .card-title {
-  color: var(--color);
-  font-size: var(--fs-8);
-  transition: var(--transition-1);
+.active,
+.accordion:hover {
+  background-color: var(--white-2);
 }
-
-.faq-card ion-icon {
-  color: var(--color);
-  font-size: 15px;
-  transition: var(--transition-1);
-  --ionicon-stroke-width: 60px;
-}
-
-.faq-card .card-action.active .open,
-.faq-card .card-action .close { display: none; }
-
-.faq-card .card-action .open,
-.faq-card .card-action.active .close { display: block; }
-
-.faq-card .card-content {
-  font-size: var(--fs-10);
-  padding-inline: 25px;
-  max-height: 0;
+.pannel {
+  padding: 0 2rem 2.5rem 2rem;
   overflow: hidden;
-  transition: var(--transition-2);
+  background-color: var(--white-2);
+  display: none;
+  
+}
+.pannel p {
+  color: var(--gray-web);
+  font-size: var(--fs-6);
+  line-height: 2;
+  text-align: justify;
 }
 
-.faq-card .card-content p { margin-block: 15px; }
+.faq {
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  margin: 10px 0;
+}
+.faq.active {
+  border: none;
+}
 
-.faq-card .card-action.active + .card-content { max-height: 500px; }
 
 
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
+/* FOOTER */
 
 .footer {
   background-color: #2e3440;
@@ -794,6 +743,7 @@ textarea.input-field {
 }
 .footer-logo p {
   text-align: center;
+  
 
 }
 .copyright-section {
@@ -806,11 +756,16 @@ textarea.input-field {
   #BACK TO TOP
 \*-----------------------------------*/
 
+
+/* BACK TO TOP */
+
+
 .back-top-btn {
   position: fixed;
   bottom: 10px;
   right: 20px;
-  background-color: var(--eerie-black);
+  width: 50px;
+  background-color: #394150;
   color: var(--white-1);
   padding: 12px;
   border-radius: 50%;
@@ -819,6 +774,7 @@ textarea.input-field {
   opacity: 0;
   visibility: hidden;
   transition: var(--transition-1);
+  text-align: center;
 }
 
 .back-top-btn.active {
@@ -837,15 +793,8 @@ textarea.input-field {
   #MEDIA QUERIES
 \*-----------------------------------*/
 
-/**
- * responsive for larger than 575px screen
- */
 
 @media (min-width: 575px) {
-
-  /**
-   * REUSED STYLE
-   */
 
   .container {
     max-width: 540px;
@@ -857,6 +806,7 @@ textarea.input-field {
     grid-template-columns: 1fr 1fr;
     column-gap: 25px;
   }
+
 
   /**
    * FOOTER
@@ -879,7 +829,6 @@ textarea.input-field {
   }
 
 
-
   /**
    * CONTACT
    */
@@ -894,24 +843,9 @@ textarea.input-field {
 }
 
 
-
-
-
-/**
- * responsive for larger than 768px screen
- */
-
 @media (min-width: 768px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
-
-    /**
-     * typography
-     */
 
     --fs-1: 4.5rem;
     --fs-2: 3.7rem;
@@ -981,30 +915,13 @@ textarea.input-field {
 
 
 
-
-/**
- * responsive for larger than 992px screen
- */
-
 @media (min-width: 992px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
-
-    /**
-     * typography
-     */
 
     --fs-1: 5rem;
     --fs-2: 4rem;
     --fs-3: 2.5rem;
-
-    /**
-     * spacing
-     */
 
     --section-padding: 100px;
 
@@ -1217,25 +1134,9 @@ textarea.input-field {
   }
 }
 
-
-
-
-
-/**
- * responsive for larger than 1200px screen
- */
-
 @media (min-width: 1200px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
-
-    /**
-     * typography
-     */
 
     --fs-1: 6.8rem;
     --fs-2: 4.5rem;
