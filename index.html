@@ -7,37 +7,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SignTalk</title>
 
-  <!-- 
-    - favicon
-  -->
+ 
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-  
-
-  <!-- 
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- 
-    - google font link
-  -->
+ 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
 </head>
 
 <body id="top">
 
-  <!-- 
-    - #HEADER
-  -->
+  <!-- HEADER -->
 
   <header class="header" data-header>
     <div class="container">
 
-      <a href="#" class="logo">SignTalk</a>
+      <a href="#home" class="logo">SignTalk</a>
 
       <nav class="navbar container" data-navbar>
         <ul class="navbar-list">
@@ -47,11 +45,11 @@
           </li>
 
           <li>
-            <a href="#about" class="navbar-link" data-nav-link>About</a>
+            <a href="#feature" class="navbar-link" data-nav-link>Features</a>
           </li>
 
           <li>
-            <a href="#feature" class="navbar-link" data-nav-link>Features</a>
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
           </li>
 
           <li>
@@ -63,7 +61,7 @@
           </li>
 
           <li>
-            <a href="#" class="btn btn-primary">Contact Us</a>
+            <a href="#contact" class="btn btn-primary">Contact Us</a>
           </li>
 
         </ul>
@@ -78,15 +76,10 @@
   </header>
 
 
-
-
-
   <main>
     <article>
 
-      <!-- 
-        - #HERO
-      -->
+      <!-- HERO -->
 
       <section class="section hero" id="home" aria-label="hero">
         <div class="container">
@@ -102,7 +95,7 @@
               professional interpreters for seamless communication and support in various settings.
             </p>
 
-            <a href="#" class="btn btn-primary"> Get Our App</a>
+            <a href="#" class="btn btn-primary"> Get Our App &nbsp; <i class="fa-brands fa-github"></i> </a>
 
           </div>
 
@@ -117,9 +110,7 @@
 
 
 
-      <!-- 
-        - #SERVICE
-      -->
+      <!-- FEATURE -->
 
       <section class="section service" id="feature" aria-label="feature">
         <div class="container">
@@ -127,8 +118,7 @@
           <h2 class="h2 section-title">Features</h2>
 
           <p class="section-text">
-            Discover intuitive features, seamless integration, real-time updates, and secure performance, all designed to 
-            enhance your experience.
+            Discover intuitive features  all designed to enhance your experience
           </p>
 
           <ul class="grid-list">
@@ -254,9 +244,7 @@
 
 
 
-      <!-- 
-        - #ABOUT
-      -->
+      <!-- ABOUT -->
 
       <section class="section about" id="about" aria-label="about">
         <div class="container">
@@ -316,29 +304,112 @@
 
 
 
+      <!-- CTA -->
 
-
-      <!-- 
-        - #CTA
-      -->
-
-      <section class="section cta" aria-label="cta" style="background-image: url('./assets/images/cheerful-people-posing-with-hands-stacked.jpg')">
+      <section class="section cta" aria-label="cta" style="background-image: url('./assets/images/cheerful-people-posing-with-hands-stacked.webp')">
         <div class="container">
 
           <p class="cta-subtitle">So What is Next?</p>
 
           <h2 class="h2 section-title">Are You Ready? Let's get started!</h2>
 
-          <a href="#" class="btn btn-secondary">Get Started</a>
+          <a href="#" class="btn btn-secondary">Download the App &nbsp; <i class="fa-brands fa-github"></i></a>
 
         </div>
       </section>
 
 
+      <!-- FAQ -->
 
-      <!-- 
-        - #CONTACT
-      -->
+      <section id="faq" aria-label="faq">
+
+        <div class="wrapper">
+          <h1>Frequently Asked Questions</h1>
+    
+          <div class="faq">
+            <button class="accordion">
+              Which sign languages does the platform support?
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="pannel">
+              <p>
+                Currently, we support British Sign Language (BSL) and Sri Lankan Sign Language (SLSL).
+              </p>
+            </div>
+          </div>
+    
+          <div class="faq">
+            <button class="accordion">
+              Who can use this platform?
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="pannel">
+              <p>
+                This platform is beneficial for deaf and non-verbal users who need assistance in communication and for interpreters seeking 
+                opportunities to connect with clients. It facilitates interaction in various environments such as workplaces, events, 
+                or day-to-day activities, enhancing accessibility for everyone involved.
+              </p>
+            </div>
+          </div>
+    
+          <div class="faq">
+            <button class="accordion">
+              How can I hire an interpreter?
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="pannel">
+              <p>
+                To hire an interpreter, users can create an account, browse profiles with detailed qualifications, availability, and rates, 
+                and book an interpreter through a seamless interface. The platform facilitates secure payments and offers direct communication 
+                with interpreters to discuss session details if needed.
+              </p>
+            </div>
+          </div>
+    
+          <div class="faq">
+            <button class="accordion">
+              Is there a mobile app available?
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="pannel">
+              <p>
+                Yes, the platform is available and based on a mobile app for both Android and iOS devices.It allows users to access services anytime and anywhere. 
+                The app is designed to provide a seamless experience with all the platform’s features, including bookings and real-time translation.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <button class="accordion">
+              Are there any subscription plans for users?
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="pannel">
+              <p>
+                Yes, we offer the real-time sign language translation free and if you want to hire an interprer you have to buy a package or pay the interpreter at the time. 
+                Priority booking for interpreters and additional services like advanced filtering options and detailed interpreter profiles.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <button class="accordion">
+              What if I encounter a technical issue while using the platform?
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="pannel">
+              <p>
+                Users can reach out to our 24/7 support team through live chat, email, or the Help Center. Our support team is equipped to resolve technical issues quickly, 
+                ensuring that users can access services without interruptions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      
+      <!-- CONTACT -->
 
       <section class="section contact" id="contact" aria-label="contact">
         <div class="container">
@@ -346,26 +417,19 @@
           <h2 class="h2 section-title">Contact Us</h2>
 
           <p class="section-text">
-            Got questions or need assistance? Reach out to us, and we’ll be happy to help you with your sign language translation and 
-            interpreter needs!
+            Got questions or need assistance? Reach out to us and we’ll be happy to help you 
           </p>
 
           <form action="" class="contact-form">
 
             <div class="input-wrapper">
-              <input type="text" name="name" aria-label="name" placeholder="Your name*" required class="input-field">
+              <input type="text" name="name" aria-label="name" placeholder="Your name *" required class="input-field">
 
-              <input type="email" name="email_address" aria-label="email" placeholder="Email address*" required
+              <input type="email" name="email_address" aria-label="email" placeholder="Email address *" required
                 class="input-field">
-            </div>
+            </div>      
 
-            <div class="input-wrapper">
-              <input type="text" name="subject" aria-label="subject" placeholder="Subject" class="input-field">
-
-              <input type="number" name="phone" aria-label="phone" placeholder="Phone number" class="input-field">
-            </div>
-
-            <textarea name="message" aria-label="message" placeholder="Your message...*" required
+            <textarea name="message" aria-label="message" placeholder="Enter your message... *" required
               class="input-field"></textarea>
 
             <div class="checkbox-wrapper">
@@ -455,9 +519,7 @@
 
 
 
-  <!-- 
-    - #FOOTER
-  -->
+  <!-- FOOTER -->
 
   <footer class="footer">
     <div class="container">
@@ -473,26 +535,22 @@
 
 
 
-  <!-- 
-    - #BACK TO TOP
-  -->
+   
+  <!-- BACK TO TOP -->
+
 
   <a href="#top" aria-label="back to top" data-back-top-btn class="back-top-btn">
-    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    <i class="fa-solid fa-hand-point-up"></i>
   </a>
 
 
 
 
 
-  <!-- 
-    - custom js link
-  -->
+  <!-- js links -->
+  
   <script src="./assets/js/script.js" defer></script>
 
-  <!-- 
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
