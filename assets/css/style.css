@@ -360,6 +360,10 @@ body {
   #TEAM
 \*-----------------------------------*/
 
+.section-text{
+  margin-bottom: 30px;
+}
+
 .member-card {
   display: flex;
   flex-direction: column;
