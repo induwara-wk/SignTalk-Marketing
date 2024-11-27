@@ -699,18 +699,19 @@ textarea.input-field {
   color: #fff;
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 5px;
   margin-block: 15px 0;
 }
 .footer-link-section {
   display: flex;
   justify-content: center;
   align-content: center;
-  gap: 10px;
-  margin-block: 15px 0;
+  gap: 5px;
+  margin-block: 5px 0;
   flex: 1;
   flex-direction: column;
   width: 100%;
+  
 }
 .footer-link-section p {
   font-size: 1.25rem;
