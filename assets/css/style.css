@@ -211,6 +211,10 @@ body {
 
 /* HEADER */
 
+.container .logo img{
+  height: 50px;
+}
+
 
 .header {
   position: fixed;
