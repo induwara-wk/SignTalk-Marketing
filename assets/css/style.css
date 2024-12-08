@@ -811,6 +811,89 @@ textarea.input-field {
   #MEDIA QUERIES
 \*-----------------------------------*/
 
+/* For screens smaller than 575px */
+@media (max-width: 574px) {
+
+  :root {
+    /* Adjusted font sizes for small screens */
+    --fs-1: 2.5rem;
+    --fs-2: 2rem;
+    --fs-4: 1.2rem;
+    --fs-5: 1rem;
+    --fs-6: 0.9rem;
+  }
+
+  /**
+   * REUSED STYLE
+   */
+  .container {
+    max-width: 100%; /* Full width on small screens */
+    padding: 0 16px; /* Add padding to prevent edge alignment */
+    margin-inline: auto;
+  }
+
+  .btn {
+    font-size: var(--fs-6); /* Use smaller button font size */
+  }
+
+  /**
+   * SERVICE
+   */
+  .service-card {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .service-card .h3 {
+    font-size: var(--fs-2); /* Smaller heading for services */
+  }
+
+  /**
+   * ABOUT
+   */
+  .about .container {
+    gap: 30px; /* Reduce spacing between elements */
+  }
+
+  .about-item {
+    gap: 5px;
+  }
+
+  .about-item ion-icon {
+    font-size: 16px; /* Smaller icon size */
+  }
+
+  /**
+   * CTA
+   */
+  .cta .section-title {
+    margin-block: 10px 16px; /* Reduce spacing above/below titles */
+  }
+
+  /**
+   * CONTACT
+   */
+  .contact-form {
+    padding: 20px; /* Reduce form padding */
+  }
+
+  .contact-card {
+    gap: 10px; /* Reduce gap between contact items */
+  }
+
+  .contact-card .card-icon {
+    padding: 10px; /* Smaller icon padding */
+  }
+
+  /**
+   * FOOTER
+   */
+  .footer-content {
+    max-width: 100%; /* Full width for footer */
+    padding: 0 16px; /* Add padding for spacing */
+  }
+}
+
+
 
 @media (min-width: 575px) {
 
@@ -892,9 +975,11 @@ textarea.input-field {
   /**
    * HERO
    */
-
+  .hero-content{
+    max-width: 50ch;
+  }
   .hero-text {
-    max-width: 60ch;
+    max-width: 65ch;
     margin-inline: auto;
   }
 
