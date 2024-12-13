@@ -435,7 +435,7 @@ body {
   100% { box-shadow: 0 0 0 25px transparent; }
 }
 
-.about :is(.section-title, .section-text) { text-align: left; }
+.about :is( .section-text) { text-align: left; }
 
 .about .section-title { margin-block-end: 5px; }
 
@@ -817,7 +817,8 @@ textarea.input-field {
   :root {
     /* Adjusted font sizes for small screens */
     --fs-1: 2.5rem;
-    --fs-2: 2rem;
+    --fs-2: 2.2rem;
+    --fs-3: 1.6rem;
     --fs-4: 1.2rem;
     --fs-5: 1rem;
     --fs-6: 0.9rem;
@@ -836,6 +837,15 @@ textarea.input-field {
     font-size: var(--fs-6); /* Use smaller button font size */
   }
 
+
+
+  /**
+  HERO
+  */
+  .hero-text{
+    text-align: center;
+  }
+
   /**
    * SERVICE
    */
@@ -844,7 +854,7 @@ textarea.input-field {
   }
 
   .service-card .h3 {
-    font-size: var(--fs-2); /* Smaller heading for services */
+    font-size: var(--fs-3); /* Smaller heading for services */
   }
 
   /**
@@ -860,6 +870,10 @@ textarea.input-field {
 
   .about-item ion-icon {
     font-size: 16px; /* Smaller icon size */
+  }
+
+  .about .container .about content .h2 {
+    text-align: center;
   }
 
   /**
@@ -929,6 +943,13 @@ textarea.input-field {
     gap: 10px;
   }
 
+  /** 
+  ABOUT
+  */
+  .about  .section-title{
+    text-align: left;
+  }
+
 
   /**
    * CONTACT
@@ -996,6 +1017,9 @@ textarea.input-field {
     margin-inline: 0;
   }
 
+  .about  .section-title{
+    text-align: left;
+  }
 
 
   /**
