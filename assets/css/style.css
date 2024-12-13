@@ -836,7 +836,9 @@ textarea.input-field {
   .btn {
     font-size: var(--fs-6); /* Use smaller button font size */
   }
-
+.logo img{
+  width: 125px;
+}
 
 
   /**
