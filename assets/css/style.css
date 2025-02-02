@@ -740,7 +740,9 @@ textarea.input-field {
 .socialn-media a:hover {
   color: #FE5F3D;
 }
-
+.socialn-contact {
+  text-align: right; /* Aligns text content to the right */
+}
 .contactn-info {
   margin-top: 10px;
 }
@@ -749,7 +751,6 @@ textarea.input-field {
   margin: 5px 0;
   font-size: 14px;
   color: #ccc;
-  text-align: left;
   display: flex;
   flex-direction: row;
 }
