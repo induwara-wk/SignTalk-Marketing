@@ -398,8 +398,9 @@ body {
   justify-content: center;
   color: black;
 }
-
-
+.member-socialmedia a:hover{
+  color: #FE5F3D;
+}
 /* ABOUT */
 
 
@@ -739,7 +740,9 @@ textarea.input-field {
 .socialn-media a:hover {
   color: #FE5F3D;
 }
-
+.socialn-contact {
+  text-align: right; /* Aligns text content to the right */
+}
 .contactn-info {
   margin-top: 10px;
 }
