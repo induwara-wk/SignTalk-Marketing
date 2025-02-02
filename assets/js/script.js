@@ -123,3 +123,14 @@ window.onclick = function(event) {
         }, 300); // Match the duration of the CSS transition
     }
 }
+
+
+function sendMail(){
+  let parms={
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  }
+
+  emailjs.send("service_bh2nckj", "template_quqvduf", parms).then(alert("Email Sent!!"))
+}

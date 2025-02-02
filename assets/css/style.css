@@ -748,23 +748,22 @@ textarea.input-field {
   margin: 5px 0;
   font-size: 14px;
   color: #ccc;
-  text-align: left;
   display: flex;
   flex-direction: row;
 }
 
 .footern-bottom {
-margin-top: 20px;
-border-top: 1px solid #444;
-padding-top: 10px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .footern-bottom p {
   display: flex;
   flex-direction: row;
-
 }
 
 .footern-bottom p {

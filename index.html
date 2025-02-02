@@ -24,8 +24,19 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+    referrerpolicy="no-referrer"/>
+
+    <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+      (function(){
+          emailjs.init({
+            publicKey: "d9BxkSPDQz5g5GEQU",
+          });
+      })();
+    </script>
 
 </head>
 
@@ -588,25 +599,14 @@
           <form action="" class="contact-form">
 
             <div class="input-wrapper">
-              <input type="text" name="name" aria-label="name" placeholder="Your name *" required class="input-field">
+              <input type="text" name="your_name" placeholder="Your name *" required class="input-field" id="name">
 
-              <input type="email" name="email_address" aria-label="email" placeholder="Email address *" required
-                class="input-field">
+              <input type="email" name="email_address" placeholder="Email address *" required class="input-field" id="email">
             </div>      
 
-            <textarea name="message" aria-label="message" placeholder="Enter your message... *" required
-              class="input-field"></textarea>
+            <textarea name="your_message" placeholder="Enter your message... *" required class="input-field" id="message"></textarea>
 
-            <div class="checkbox-wrapper">
-              <input type="checkbox" name="terms_and_policy" id="terms" required class="checkbox">
-
-              <label for="terms" class="label">
-                Accept <a href="#" class="label-link">Terms of Services</a> and <a href="#" class="label-link">Privacy
-                  Policy</a>
-              </label>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Send Message</button>
+            <button type="submit" class="btn btn-primary" onclick="sendMail()">Send Message</button>
 
           </form>
         </div>
