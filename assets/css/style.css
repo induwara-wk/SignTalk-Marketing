@@ -697,7 +697,7 @@ textarea.input-field {
 
 .footern-content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
@@ -758,7 +758,7 @@ margin-top: 20px;
 border-top: 1px solid #444;
 padding-top: 10px;
 display: flex;
-justify-content: space-evenly;
+justify-content: space-between;
 align-items: center;
 }
 .footern-bottom p {
