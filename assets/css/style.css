@@ -606,7 +606,6 @@ textarea.input-field {
 
 /* FAQ */
 
-/* FAQ */
 .wrapper {
   max-width: 75%;
   margin: 60px auto;
@@ -682,17 +681,6 @@ textarea.input-field {
 
 
 /* FOOTER */
-/* Footer Styles */
-.all{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.bodyn{
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
 .footern {
   background-color: #323743;
   color: #fff;

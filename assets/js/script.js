@@ -60,22 +60,29 @@ window.addEventListener("scroll", function () {
 
 
 var acc = document.getElementsByClassName("accordion");
-      var i;
+var i;
 
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          this.parentElement.classList.toggle("active");
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    this.parentElement.classList.toggle("active");
 
-          var pannel = this.nextElementSibling;
+    var icon = this.querySelector("i");
+    var pannel = this.nextElementSibling;
 
-          if (pannel.style.display === "block") {
-            pannel.style.display = "none";
-          } else {
-            pannel.style.display = "block";
-          }
-        });
-      }
+    if (pannel.style.maxHeight) {
+      pannel.style.maxHeight = null;
+      pannel.style.padding = "0 2rem";
+      icon.classList.remove("fa-minus");
+      icon.classList.add("fa-plus");
+    } else {
+      pannel.style.maxHeight = pannel.scrollHeight + "px";
+      pannel.style.padding = "0 2rem 2.5rem 2rem";
+      icon.classList.remove("fa-plus");
+      icon.classList.add("fa-minus");
+    }
+  });
+}
 
 
 
