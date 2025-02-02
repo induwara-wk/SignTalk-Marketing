@@ -76,3 +76,43 @@ var acc = document.getElementsByClassName("accordion");
           }
         });
       }
+
+
+
+
+// script.js
+
+// Get the modal
+const modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+const openModalBtn = document.getElementById("openModalBtn");
+
+// Get the button that closes the modal
+const closeModalBtn = document.getElementById("closeModalBtn");
+
+// When the user clicks the button, open the modal
+openModalBtn.onclick = function() {
+    modal.style.display = "block"; // Show the modal
+    setTimeout(() => {
+        modal.classList.add("open"); // Add the 'open' class for animation
+    }, 10); // Small delay to trigger the transition
+}
+
+// When the user clicks on the close button, close the modal
+closeModalBtn.onclick = function() {
+    modal.classList.remove("open"); // Remove the 'open' class for animation
+    setTimeout(() => {
+        modal.style.display = "none"; // Hide the modal after the transition
+    }, 300); // Match the duration of the CSS transition
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.classList.remove("open"); // Remove the 'open' class for animation
+        setTimeout(() => {
+            modal.style.display = "none"; // Hide the modal after the transition
+        }, 300); // Match the duration of the CSS transition
+    }
+}
